@@ -4,6 +4,7 @@
 ## overview
     for someone who is a big fan of traveling, i feel like whatever project i emback on has to include that in a way. This project creates a fun quize game that tests the users knowledge on the capital state of each country in the world.
 
+
     your are promted to start the game, which takes you to a different page. In the second page, you are asked which of the following you think is the capital of a specific country. each game has a 2 minute timer and the score of whatever you get right is displayed at the end. The game keeps track of highest score the user ever gets and updates it if it is ever beaten.
 
 
@@ -15,11 +16,11 @@
 
    <!-- ![images](https://wireframepro.mockflow.com/view/M4368f162881fb79dc863cb15d55fe6e61616122268124) -->
 
-   ![repo-images]  (repo-images/Page_1.png)
+   ![repo-images](repo-images/Page_1.png)
 
-   ![repo-images]  (repo-images/Page_2.png)
+   ![repo-images](repo-images/Page_2.png)
 
-   ![repo-images]  (repo-images/Page_3.png)
+   ![repo-images](repo-images/Page_3.png)
 
 
 
