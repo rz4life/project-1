@@ -10,26 +10,39 @@
 <body>
 
     <section class="page-1">
-        <h1> Capital Quizz</h1>
-        <h3> How Many Countries Capital can you guess in 2 minutes??</h3>
-        <h3> Press the Start Button and lets find out!!!</h3>
+        <h1> Capital Quiz</h1>
+        <h3> How Many Countries Capital can you answer in ---> 2 minutes?? < </h3>
+        <h3> > Press the Start Button and lets find out!!! < </h3>
+        <p> Your time starts after you Press Start </p>
 
-        <button> Start Game </button>
+        <button class="start-button"> > Start Game < </button>
     </section>
 
-    <section class="page-2">
+    <section class="hidden" id="page-2">
 
         <div class="question"></div>
-        <div class="option" id="opt1"></div>
-        <div class="option" id="opt2"></div>
-        <div class="option" id="opt3"></div>
-        <div class="option" id="opt4"></div>
-
+        <div class="textButton">
+        <button class="option" id="opt1"></button><div class ="buttonOpt" id="opt-1"></div><br>
+        </div>
+        <div class="textButton">
+        <button class="option" id="opt2"></button><div class ="buttonOpt" id="opt-2"></div><br>
+        </div>
+        <div class="textButton">          
+        <button class="option" id="opt3"></button><div class ="buttonOpt" id="opt-3"></div><br>
+        </div>
+        <div class="textButton">          
+        <button class="option" id="opt4"></button><div class ="buttonOpt" id="opt-4"></div><br>
+        </div><br><br>         
+        <button class="skip" id="skipButton">Skip question</button><br>
+       <br> <div class="timer">You have 15 sec</div>
+        <div class="totalscore">Your score is 0</div>
     </section>
 
-    <section class="page-3">
-
-
+    <section class="hidden"  id="page-3">
+        <h1> CONGRATULATIONS!!! </h1>
+        <div class = "finalScore"> You Had 0 score</div>
+        <div class = "highestScore">The Higest score is zero</div><br><br>
+        <button class="skip" id="restartButton">Restart Game</button><br>
         
     </section>
     

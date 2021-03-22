@@ -1,5 +1,113 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: auto;
+}
 .page-1{
     text-align: center;
-    background-color: bisque;
+    background-image: url('https://cdn.hipwallpaper.com/i/10/9/LZ4hNS.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: darkgoldenrod;
+    justify-content: center;
+    width: 650px;
+    height: 500px;
+    margin: 60px;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Syne Mono', monospace;
+    font-size: 100px ;
+}
+.start-button{
+    font-size: 20px;
+    padding: 20px;
+    background-color: cyan;
+    font-family: 'Syne Mono', monospace;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgb(20, 80, 80);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+#page-2{
+    background-color: rgb(10, 93, 126);
+    text-align: center;
+    padding: 35px;
+    font-family: 'Syne Mono', monospace;
+    box-sizing: border-box;
+    margin: 60px;
+    width: 650px;
+    height: 500px;   
+}
+#page-3{
+    background-color: rgb(10, 93, 126);
+    text-align: center;
+    padding: 35px;
+    font-family: 'Syne Mono', monospace;
+    box-sizing: border-box;
+    margin: 60px;
+    width: 650px;
+    height: 500px;
+}
+.totalscore{
+    margin-top: 50px;
+    border: 2px solid black;
+    width: 300px; 
+}
+.finalScore{
+    margin-top: 50px;
+    border: 2px solid black;
+    padding-left: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.skip{
+    font-size: 15px;
+    padding: 20px;
+    background-color: rgb(10, 93, 126);
+    font-family: 'Syne Mono', monospace;
+}
+.highestScore{
+    margin-top: 35px;
+    border: 2px solid black;
+    padding-left: 25px;
+    font-size: 20px;
+    text-align: center; 
+}
+.question{
+    font-size: 50px;
+}
+.buttonOpt{
+    font-size: 20px;
+    color: azure;
+}
+.option{
+    width: 35px;
+   margin: 5px;
+}
+h1{
+    font-size: 50px;
+    color:rgb(4, 23, 39);
+    text-shadow: cyan;
+}
+p{
+    font-size: 15px; 
+}
+h3{
+    font-size: 20px;
+    color:rgb(4, 23, 42);
+}
+.textButton{
+  display: flex;
+  border: 2px solid black; 
+  padding: 5px;
+}
 
+button:hover{
+    background-color:rgb(20, 80, 80);
+}
+.hidden{
+    display: none;
 }
