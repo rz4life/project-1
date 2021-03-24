@@ -3,6 +3,10 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: auto;
+    /* margin: 60px;
+    max-width: 650px;
+    max-height: 500px;   */
+
 }
 .page-1{
     text-align: center;
@@ -17,11 +21,27 @@ body{
     align-items: center;
     padding: 2rem;
     font-family: 'Syne Mono', monospace;
-    font-size: 100px ;
+    font-size: 60px ;
 }
 .start-button{
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
+    background-color: cyan;
+    font-family: 'Syne Mono', monospace;
+}
+.mode-button{
+    display: flex;
+    justify-content: center;
+}
+.easy-button{
+    padding: 10px;
+    margin: 20px;
+    background-color: cyan;
+    font-family: 'Syne Mono', monospace;
+}
+.hard-button{
+    padding: 10px;
+    margin: 20px;
     background-color: cyan;
     font-family: 'Syne Mono', monospace;
 }
@@ -38,8 +58,9 @@ button:hover{
     font-family: 'Syne Mono', monospace;
     box-sizing: border-box;
     margin: 60px;
-    width: 650px;
-    height: 500px;   
+    max-width: 650px;
+    max-height: 500px;  
+    white-space:inherit; 
 }
 #page-3{
     background-color: rgb(10, 93, 126);
@@ -78,6 +99,9 @@ button:hover{
 }
 .question{
     font-size: 50px;
+    /* white-space: nowrap; */
+    /* max-width: 600px;
+    max-height: 600px; */
 }
 .buttonOpt{
     font-size: 20px;
@@ -93,7 +117,9 @@ h1{
     text-shadow: cyan;
 }
 p{
-    font-size: 15px; 
+    font-size: 15px;
+    text-decoration: underline;
+     
 }
 h3{
     font-size: 20px;
