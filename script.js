@@ -33,7 +33,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     {name: "Panama", capital: "Panama City"},
     {name: "Argentina", capital: "Buenos Aires"},
  ];
- let remainingTime = 120;
+ let remainingTime = 60;
  let mode ='easy';
  let interval
  console.log(data)
@@ -101,7 +101,7 @@ countries = shuffleArray(countries)
   startButton.addEventListener('click', () => {
     document.querySelector('.page-1').classList.add('hidden')
     document.querySelector('#page-2').classList.remove('hidden')
-    remainingTime = 120;
+    remainingTime = 60;
     if( mode === 'easy'){
         countRandom = Math.floor(Math.random() * easyCountries.length)
         count = countRandom;
@@ -124,9 +124,9 @@ countries = shuffleArray(countries)
         document.querySelector('#page-2').classList.add('hidden')
         document.querySelector('#page-3').classList.remove('hidden')
         let currentHighest = localStorage.getItem('hScore') 
-    }, 120000);
+    }, 60000);
  })
- remainingTime = 120;
+ remainingTime = 60;
 
 
  document.querySelector('#restartButton').addEventListener('click', (event) =>{
@@ -142,7 +142,7 @@ countries = shuffleArray(countries)
     document.querySelector('#page-3').classList.add('hidden')
     document.querySelector('.page-1').classList.remove('hidden')
     totalScore.innerText = `Your score is ${score}`
-    remainingTime = 120;
+    remainingTime = 60;
     clearInterval(interval)
  })
 
