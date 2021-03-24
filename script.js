@@ -15,7 +15,22 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     {name: "Spain", capital: "Madrid"},
     {name: 'Great Britain', capital: "London"},
     {name: "Mexico", capital: "Mexico City"},
+    {name: "Ghana", capital: "Accra"},
+    {name: "Greece", capital: "Athens"},
     {name: "Canada", capital: "Ottawa"},
+    {name: "Iraq", capital: "Baghdad"},
+    {name: "Ireland", capital: "Dublin"},
+    {name: "Luxembourg", capital: "Luxembourg"},
+    {name: "Russian Federation", capital: "Moscow"},
+    {name: "Korea (Republic of)", capital: "Seoul"},
+    {name: "Netherlands", capital: "Amsterdam"},
+    {name: "Monaco", capital: "Monaco"},
+    {name: "China", capital: "Beijing"},
+    {name: "United Arab Emirates", capital: "Abu Dhabi"},
+    {name: "Belgium", capital: "Brussels"},
+    {name: "Colombia", capital: "Bogotá"},
+    {name: "Morocco", capital: "Rabat"},
+    {name: "Panama", capital: "Panama City"},
     {name: "Argentina", capital: "Buenos Aires"},
  ];
  let remainingTime = 120;
@@ -25,12 +40,11 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
  for(i=0; i<data.length; i++){
     // console.log(data[i].capital)
  if( data[i].capital !== ""){
-    // console.log(data[i].capital)
      countries.push(data[i])
     }
- }
+}
 
- function shuffleArray (countries){
+function shuffleArray (countries){
     for(r=countries.length-1; r>0; r--){
         let rand = Math.floor(Math.random() * (r+1));
         let temp = countries[r];
@@ -38,9 +52,10 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
         countries[rand] = temp;  
     }
     return countries;
- }
- countries = shuffleArray(countries)
+}
+countries = shuffleArray(countries)
 
+ console.log(countries)
  let score = 0;   
  let arrNum = []
  let startButton = document.querySelector('.start-button')
@@ -95,7 +110,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
         count = countRandom;
      }
      let timer = document.querySelector('.timer')
-     timer.innerText = `you have ${remainingTime} left`
+     timer.innerText = `you have ${remainingTime}seconds left`
     console.log(mode)
     modeSelection();
 
@@ -108,8 +123,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
         
         document.querySelector('#page-2').classList.add('hidden')
         document.querySelector('#page-3').classList.remove('hidden')
-        let currentHighest = localStorage.getItem('hScore')
-        highestScore.innerText = `Highest score is ${currentHighest}` 
+        let currentHighest = localStorage.getItem('hScore') 
     }, 120000);
  })
  remainingTime = 120;
