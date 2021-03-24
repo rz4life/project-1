@@ -18,7 +18,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     {name: "Canada", capital: "Ottawa"},
     {name: "Argentina", capital: "Buenos Aires"},
  ];
- let remainingTime = 15;
+ let remainingTime = 120;
  let mode ='easy';
  let interval
  console.log(data)
@@ -86,7 +86,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
   startButton.addEventListener('click', () => {
     document.querySelector('.page-1').classList.add('hidden')
     document.querySelector('#page-2').classList.remove('hidden')
-    remainingTime = 15;
+    remainingTime = 120;
     if( mode === 'easy'){
         countRandom = Math.floor(Math.random() * easyCountries.length)
         count = countRandom;
@@ -110,9 +110,9 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
         document.querySelector('#page-3').classList.remove('hidden')
         let currentHighest = localStorage.getItem('hScore')
         highestScore.innerText = `Highest score is ${currentHighest}` 
-    }, 15000);
+    }, 120000);
  })
- remainingTime = 15;
+ remainingTime = 120;
 
 
  document.querySelector('#restartButton').addEventListener('click', (event) =>{
@@ -128,7 +128,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     document.querySelector('#page-3').classList.add('hidden')
     document.querySelector('.page-1').classList.remove('hidden')
     totalScore.innerText = `Your score is ${score}`
-    remainingTime = 15;
+    remainingTime = 120;
     clearInterval(interval)
  })
 
