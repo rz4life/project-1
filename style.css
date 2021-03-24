@@ -3,10 +3,6 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: auto;
-    /* margin: 60px;
-    max-width: 650px;
-    max-height: 500px;   */
-
 }
 .page-1{
     text-align: center;
@@ -60,7 +56,7 @@ button:hover{
     margin: 60px;
     max-width: 650px;
     max-height: 500px;  
-    white-space:inherit; 
+     
 }
 #page-3{
     background-color: rgb(10, 93, 126);
@@ -73,7 +69,7 @@ button:hover{
     height: 500px;
 }
 .totalscore{
-    margin-top: 50px;
+    margin-top: 30px;
     border: 2px solid black;
     width: 300px; 
 }
@@ -98,10 +94,7 @@ button:hover{
     text-align: center; 
 }
 .question{
-    font-size: 50px;
-    /* white-space: nowrap; */
-    /* max-width: 600px;
-    max-height: 600px; */
+    font-size: 5vw;
 }
 .buttonOpt{
     font-size: 20px;
@@ -124,6 +117,9 @@ p{
 h3{
     font-size: 20px;
     color:rgb(4, 23, 42);
+}
+.timer{
+   text-decoration: underline; 
 }
 .textButton{
   display: flex;

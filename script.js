@@ -105,7 +105,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
         timer.innerText = `you have ${remainingTime} left`
     }, 1000);
     setTimeout(function(){
-        // document.querySelector('.page-1').classList.add('hidden')
+        
         document.querySelector('#page-2').classList.add('hidden')
         document.querySelector('#page-3').classList.remove('hidden')
         let currentHighest = localStorage.getItem('hScore')
@@ -113,7 +113,6 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     }, 15000);
  })
  remainingTime = 15;
-//  clearInterval(interval)
 
 
  document.querySelector('#restartButton').addEventListener('click', (event) =>{
@@ -123,7 +122,7 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
     }else if (mode === 'hard'){
         countRandom = Math.floor(Math.random() * countries.length)
     }
-    // countRandom = Math.floor(Math.random() * countries.length)
+    
     count = countRandom++;
     score = 0;  
     document.querySelector('#page-3').classList.add('hidden')
@@ -135,27 +134,18 @@ fetch(`https://restcountries.eu/rest/v2/all?fields=name;capital`).then(async(res
 
 
  let easyrandomSelection = () =>{
-    //  debugger
-     try {
-        
         let answerInner = []
         let ansRan = Math.floor(Math.random() * 4)
         question.innerText = `The Country is ${easyCountries[count].name}`
         for(let j= 0; j < 4; j++){      
-            // console.log(easyCountries)
-            // console.log(arrNum)
             answerButton[j].innerText = easyCountries[arrNum[j]].capital
             answerInner.push(answerButton[j].innerText )
          }
-        // console.log(answerInner)
         if(!answerInner.includes(easyCountries[count].capital)){
             answerButton[ansRan].innerText = easyCountries[count].capital
         } 
-     } catch (error) {
-        debugger
-    }
+
  }
- // console.log(easyCountries())
 
  let randomSelection = () =>{
     let answerInner = []
